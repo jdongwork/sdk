@@ -261,7 +261,7 @@ class MonitorConverter(object):
                     # Removed \\ from send.
                     if '\\' in send:
                         send = send.replace('\\', '"')
-                resp_code = ns_monitor.get('respCode', None)
+                resp_code = ns_monitor.get('respCode', 'any')
                 if resp_code:
                     resp_code = ns_util.get_avi_resp_code(resp_code)
 
